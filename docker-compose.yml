@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    read_only: true
+    tmpfs:
+      - /tmp
+    environment:
+      WHOFIXESTHIS_NETWORK_ENABLED: "false"

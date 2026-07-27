@@ -1,0 +1,10 @@
+{
+  "experiment": "fixroutebench-smoke",
+  "fixture_path": "data/fixtures/fixroutebench.jsonl",
+  "fixture_checksum": "ebc2aaeffa1d8770f9e62a5dbdbf489adcc15c65290793845463ad5473deeff1",
+  "threshold": 0.72,
+  "margin": 0.12,
+  "seed": 20250727,
+  "network_enabled": false,
+  "submission_enabled": false
+}

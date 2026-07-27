@@ -1,0 +1,15 @@
+{
+  "description": "Light is out above the steps at the station entrance",
+  "latitude": 52.5225,
+  "longitude": 13.4077,
+  "uncertainty_m": 14,
+  "observed_at": "2025-10-03T19:20:00+00:00",
+  "context_id": "northbank-transit",
+  "asset_id": "TR-ENT-118",
+  "image_refs": [],
+  "category_distribution": {
+    "street_light": 0.78,
+    "road_surface": 0.08,
+    "sidewalk_obstruction": 0.14
+  }
+}

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software, cite the released version and fixture checksum.
+title: WhoFixesThis
+type: software
+version: 0.1.0
+date-released: 2026-07-27
+authors:
+  - name: WhoFixesThis contributors
+repository-code: https://github.com/pxnkit/whofixesthis
+license: MIT
+keywords:
+  - civic technology
+  - temporal graphs
+  - service routing
+  - calibrated abstention

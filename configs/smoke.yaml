@@ -1,0 +1,16 @@
+experiment:
+  name: fixroutebench-smoke
+  seed: 20250727
+  mode: frozen
+
+fixture_path: data/fixtures/fixroutebench.jsonl
+
+resolver:
+  threshold: 0.72
+  margin: 0.12
+
+network:
+  enabled: false
+
+reporting:
+  submission_enabled: false

@@ -1,0 +1,88 @@
+registry_version: 1
+access_date: 2026-07-27
+default_mode: metadata_only
+
+sources:
+  - id: open311-georeport-v2
+    authority: Open311
+    jurisdiction: General
+    temporal_validity: Versioned standard
+    spatial_coverage: Implementing jurisdictions
+    canonical_url: https://wiki.open311.org/GeoReport_v2/
+    license: Public documentation
+    api_schema_version: GeoReport v2
+    rate_limit: Deployment specific
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Metadata contract only
+    legal_decision_role: Service request interoperability
+    historical_label_limitations: Service request routing does not establish legal responsibility
+
+  - id: open311-service-discovery
+    authority: Open311
+    jurisdiction: General
+    temporal_validity: Versioned standard
+    spatial_coverage: Implementing jurisdictions
+    canonical_url: https://wiki.open311.org/Service_Discovery/
+    license: Public documentation
+    api_schema_version: Service Discovery
+    rate_limit: Deployment specific
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Metadata contract only
+    legal_decision_role: Dated service catalog discovery
+    historical_label_limitations: Published service availability is not proof of operational responsibility
+
+  - id: nyc-311-2020-present
+    authority: City of New York
+    jurisdiction: New York City
+    temporal_validity: 2020 onward
+    spatial_coverage: New York City
+    canonical_url: https://data.cityofnewyork.us/resource/erm2-nwe9.json
+    license: NYC Open Data terms
+    api_schema_version: Socrata SODA
+    rate_limit: Platform and application token dependent
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Adapter target, excluded from default experiments
+    legal_decision_role: Historical routing baseline only
+    historical_label_limitations: Agency and closing fields are noisy operational labels
+
+  - id: census-tiger-line
+    authority: United States Census Bureau
+    jurisdiction: United States
+    temporal_validity: Annual releases
+    spatial_coverage: United States
+    canonical_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+    license: United States government public data
+    api_schema_version: Release specific
+    rate_limit: Download service dependent
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Metadata contract only
+    legal_decision_role: Boundary candidate generation
+    historical_label_limitations: Statistical boundaries do not establish maintenance obligations
+
+  - id: ogc-api-features
+    authority: Open Geospatial Consortium
+    jurisdiction: General
+    temporal_validity: Versioned standard
+    spatial_coverage: General
+    canonical_url: https://ogcapi.ogc.org/features/
+    license: OGC documentation terms
+    api_schema_version: OGC API Features
+    rate_limit: Deployment specific
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Metadata contract only
+    legal_decision_role: Geospatial feature interoperability
+    historical_label_limitations: Feature publication does not establish responsibility
+
+  - id: geoparquet
+    authority: GeoParquet project
+    jurisdiction: General
+    temporal_validity: Versioned specification
+    spatial_coverage: General
+    canonical_url: https://geoparquet.org/
+    license: Specification repository terms
+    api_schema_version: Release specific
+    rate_limit: Not applicable
+    snapshot_checksum: unavailable:not-materialized
+    snapshot_status: Metadata contract only
+    legal_decision_role: Frozen geospatial fixture format
+    historical_label_limitations: Format semantics do not validate source claims

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "whofixesthis"
+version = "0.1.0"
+description = "Temporal responsibility search for civic service routing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "WhoFixesThis contributors" }]
+dependencies = [
+  "fastapi>=0.116,<1",
+  "pydantic>=2.11,<3",
+  "PyYAML>=6,<7",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx>=0.28,<1",
+  "pytest>=8.4,<9",
+  "pytest-cov>=6.2,<7",
+]
+
+[project.scripts]
+whofixesthis = "whofixesthis.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/whofixesthis"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests/python"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["whofixesthis"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

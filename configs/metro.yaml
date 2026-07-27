@@ -1,0 +1,21 @@
+jurisdiction:
+  id: fictional-adjacent-metro
+  name: Harbor City and Northbank research fixture
+  fictional: true
+  crs: EPSG:4326
+
+snapshot:
+  decision_time: 2025-10-15T12:00:00+00:00
+  sources_file: configs/sources.yaml
+  raw_fetch_allowed: false
+
+privacy:
+  default_uncertainty_m: 20
+  redact_faces: true
+  redact_plates: true
+  retain_uploaded_media: false
+
+safety:
+  allow_submission: false
+  allow_email: false
+  allow_social_outreach: false
