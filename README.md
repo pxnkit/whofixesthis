@@ -6,6 +6,8 @@ The central task is administrative responsibility. Image and text cues are input
 
 The public demo uses fictional jurisdictions and frozen fixtures. It is not government guidance and it never submits a report.
 
+Live application: [whofixesthis.brahmkhatripankit.chatgpt.site](https://whofixesthis.brahmkhatripankit.chatgpt.site)
+
 ## What is included
 
 - A live React and TypeScript workbench with an offline MapLibre view
